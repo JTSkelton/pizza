@@ -8,6 +8,39 @@
   <title>Pizza Recipe</title>
 </head>
 <body>
-  
+  <form id="new-pizza">
+    <div id="pizzaSize">
+      <label for="pizzaSize1">Small</label>
+      <input type="radio"  name="pizzaSize" id="pizzaSize1" value="Small"><br>
+      <label for="pizzaSize2">Medium</label>
+      <input type="radio"  name="pizzaSize" id="pizzaSize2" value="Medium"><br>
+      <label for="pizzaSize3">Large</label>
+      <input type="radio"  name="pizzaSize" id="pizzaSize3" value="Large">
+    </div><br>
+    <div id="pizzaToppings">
+      <label for="Topping1">Pepperoni</label>
+      <input type="checkbox"  name="Toppings" id="Topping1" value="Pepperoni"><br>
+      <label for="Topping2">Sausage</label>
+      <input type="checkbox"  name="Toppings" id="Topping2" value="Sausage"><br>
+      <label for="Topping3">Ham</label>
+      <input type="checkbox"  name="Toppings" id="Topping3" value="Ham"><br>
+      <label for="Topping4">Onions</label>
+      <input type="checkbox"  name="Toppings" id="Topping4" value="Onions"><br>
+      <label for="Topping5">Peppers</label>
+      <input type="checkbox"  name="Toppings" id="Topping5" value="Peppers"><br>
+      <label for="Topping6">Olives</label>
+      <input type="checkbox"  name="Toppings" id="Topping6" value="Olives"><br>
+      <label for="Topping7">Mushrooms</label>
+      <input type="checkbox"  name="Toppings" id="Topping7" value="Mushrooms"><br>
+      <label for="Topping8">Pineapple</label>
+      <input type="checkbox"  name="Toppings" id="Topping8" value="Pineapple"><br>
+      <label for="Topping9">Extra Cheese</label>
+      <input type="checkbox"  name="Toppings" id="Topping9" value="Extra Cheese"><br><br>
+      <button type="submit" class="btn-primary">Add Pizza</button>
+    </div>
+  </form>
+  <div id="costDisplay">
+    <p>Your Total Cost is: $<span id="cost"></span></p>
+  </div>
 </body>
 </html>

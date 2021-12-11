@@ -4,7 +4,7 @@ this.size = size
 this.toppings = toppings;
 }
 
-Pizza.prototype.cost = function(pizzaSize, pizzaToppings){
+Pizza.prototype.cost = function(){
 let toppingsSum = 0;
 const size = new Map ([
 ["Small", 10.00],
@@ -22,11 +22,10 @@ const toppings = new Map ([
 ["Pineapple", 2.00],
 ["Extra Cheese", 2.00]
 ]);
-pizzaToppings.forEach(function(element) {
+this.toppings.forEach(function(element) {
   toppingsSum += toppings.get(element)
 });
-
-price = size.get(pizzaSize) + toppingsSum;
+price = size.get(this.size) + toppingsSum;
 return price;
 }
 
@@ -34,8 +33,14 @@ return price;
 //User Interface
 
 $(document).ready(function() {
-  $("#startGame").submit(function(event){
+  $("#new-pizza").submit(function(event){
   event.preventDefault();
-
+  let pizzaSize = $("input:radio[name=pizzaSize]:checked").val();
+  let pizzaToppings = [];
+  $("input:checkbox[name=Toppings]:checked").each(function(){
+  pizzaToppings.push($(this).val());
+  });
+  newPizza = new Pizza(pizzaSize, pizzaToppings);
+  $("#cost").text(newPizza.cost());
   });
 });
