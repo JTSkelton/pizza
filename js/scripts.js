@@ -42,5 +42,7 @@ $(document).ready(function() {
   });
   newPizza = new Pizza(pizzaSize, pizzaToppings);
   $("#cost").text(newPizza.cost());
+  $("#pizzaOrder").text(pizzaSize + " " + "pizza");
+  $("#pizzaDetails").text(pizzaToppings);
   });
 });

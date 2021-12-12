@@ -118,3 +118,22 @@ html, body{
     text-align: center;
     padding: 10px 20px;
   }
+
+  #newPizza{
+    display: hide;
+  }
+
+  #pizzaOrder{
+    height: 60px;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    border: 2px solid rgb(255, 255, 255); 
+    transition-duration: 0.4s;
+  }
+
+  #pizzaOrder:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.808)
+  }
