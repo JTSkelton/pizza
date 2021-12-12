@@ -10,7 +10,7 @@ Describe: rodgers()
 
 Test 1: "It should make a new pizza object in the console"
 Code: console.log(pizza1);
-Expected Output: Object { size: "Medium", toppings: (2) ["onions", "muscrooms"] }
+Expected Output: Object { size: "Medium", toppings: (2) ["onions", "mushrooms"] }
 
 Test 2: "It should take a size and multiple toppings and return a price"
 Code: pizza1.cost("Medium", ["Onions","Ham"]) 
